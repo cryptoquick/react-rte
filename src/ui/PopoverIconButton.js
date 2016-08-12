@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, {Component} from 'react';
+import React from 'react';
 import IconButton from './IconButton';
 import InputPopover from './InputPopover';
 import autobind from 'class-autobind';
@@ -12,7 +12,7 @@ type Props = {
   onSubmit: Function;
 };
 
-export default class PopoverIconButton extends Component {
+export default class PopoverIconButton extends React.Component {
   props: Props;
 
   constructor() {

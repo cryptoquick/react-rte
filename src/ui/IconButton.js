@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, {Component} from 'react';
+import React from 'react';
 import cx from 'classnames';
 import Button from './Button';
 import ButtonWrap from './ButtonWrap';
@@ -19,7 +19,7 @@ type Props = {
   label?: string;
 };
 
-export default class IconButton extends Component {
+export default class IconButton extends React.Component {
   props: Props;
 
   render(): React.Element {

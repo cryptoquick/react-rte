@@ -1,5 +1,5 @@
 /* @flow */
-import React, {Component} from 'react';
+import React from 'react';
 import {CompositeDecorator, Editor, EditorState, Modifier, RichUtils} from 'draft-js';
 import getDefaultKeyBinding from 'draft-js/lib/getDefaultKeyBinding';
 import changeBlockDepth from './lib/changeBlockDepth';
@@ -46,7 +46,7 @@ type Props = {
   customStyleMap?: {[style: string]: {[key: string]: any}};
 };
 
-export default class RichTextEditor extends Component {
+export default class RichTextEditor extends React.Component {
   props: Props;
   _keyEmitter: EventEmitter;
 

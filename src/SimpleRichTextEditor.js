@@ -1,5 +1,5 @@
 /* @flow */
-import React, {Component} from 'react';
+import React from 'react';
 import RichTextEditor, {createEmptyValue} from './RichTextEditor';
 import autobind from 'class-autobind';
 
@@ -14,7 +14,7 @@ type State = {
   editorValue: EditorValue;
 };
 
-export default class SimpleRichTextEditor extends Component {
+export default class SimpleRichTextEditor extends React.Component {
   props: Props;
   state: State;
 

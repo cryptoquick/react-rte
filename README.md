@@ -24,10 +24,10 @@ Try the editor here: [react-rte.org/demo][react-rte-demo]
 This example uses newer JavaScript and JSX. For an example in old JavaScript, [see below](#example-with-es5-and-no-jsx).
 
 ```javascript
-import React, {Component, PropTypes} from 'react';
+import React from 'react';
 import RichTextEditor from 'react-rte';
 
-class MyStatefulEditor extends Component {
+class MyStatefulEditor extends React.Component {
   static propTypes = {
     onChange: PropTypes.func
   };

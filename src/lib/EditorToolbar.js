@@ -1,7 +1,7 @@
 /* @flow */
 import {hasCommandModifier} from 'draft-js/lib/KeyBindingUtil';
 
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {EditorState, Entity, RichUtils} from 'draft-js';
 import {ENTITY_TYPE} from 'draft-js-utils';
@@ -39,7 +39,7 @@ type State = {
   showLinkInput: boolean;
 };
 
-export default class EditorToolbar extends Component {
+export default class EditorToolbar extends React.Component {
   props: Props;
   state: State;
 

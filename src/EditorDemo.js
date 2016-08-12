@@ -1,5 +1,5 @@
 /* @flow */
-import React, {Component} from 'react';
+import React from 'react';
 import RichTextEditor, {createEmptyValue} from './RichTextEditor';
 import {convertToRaw} from 'draft-js';
 import autobind from 'class-autobind';
@@ -12,7 +12,7 @@ type State = {
   format: string;
 };
 
-export default class EditorDemo extends Component {
+export default class EditorDemo extends React.Component {
   props: Props;
   state: State;
 

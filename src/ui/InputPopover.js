@@ -1,5 +1,5 @@
 /* @flow */
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import IconButton from './IconButton';
 import ButtonGroup from './ButtonGroup';
@@ -15,7 +15,7 @@ type Props = {
   onSubmit: (value: string) => any;
 };
 
-export default class InputPopover extends Component {
+export default class InputPopover extends React.Component {
   props: Props;
   _inputRef: ?Object;
 

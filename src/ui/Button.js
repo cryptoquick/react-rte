@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, {Component} from 'react';
+import React from 'react';
 import cx from 'classnames';
 import autobind from 'class-autobind';
 
@@ -21,7 +21,7 @@ type Props = {
   onMouseDown?: EventHandler;
 };
 
-export default class Button extends Component {
+export default class Button extends React.Component {
   props: Props;
 
   constructor() {

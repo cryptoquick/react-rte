@@ -1,5 +1,5 @@
 /* @flow */
-import React, {Component} from 'react';
+import React from 'react';
 import IconButton from '../ui/IconButton';
 import autobind from 'class-autobind';
 
@@ -8,7 +8,7 @@ type Props = {
   onToggle: (style: string) => any;
 };
 
-export default class StyleButton extends Component {
+export default class StyleButton extends React.Component {
   props: Props;
 
   constructor() {

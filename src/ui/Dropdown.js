@@ -1,5 +1,5 @@
 /* @flow */
-import React, {Component} from 'react';
+import React from 'react';
 import autobind from 'class-autobind';
 import cx from 'classnames';
 
@@ -13,7 +13,7 @@ type Props = {
   className?: string;
 };
 
-export default class Dropdown extends Component {
+export default class Dropdown extends React.Component {
   props: Props;
 
   constructor() {
